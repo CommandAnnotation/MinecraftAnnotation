@@ -5,7 +5,7 @@ import skywolf46.commandannotation.v4.api.data.Arguments
 
 class MinecraftCommandInstance : ICommand {
     override fun getPriority(): Int {
-        TODO("Not yet implemented")
+        return 0
     }
 
     override fun invokeCommand(arguments: Arguments) {

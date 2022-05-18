@@ -1,0 +1,5 @@
+name: CommandAnnotationMinecraft
+version: 1.0.0
+main: skywolf46.commandannotation.v4.minecraft.CommandAnnotationPlugin
+depend:
+  - SkywolfExtraUtility

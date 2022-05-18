@@ -31,12 +31,18 @@ dependencies {
     compileOnly("skywolf46:exutil-minecraft:latest.release")
     compileOnly("skywolf46:commandannotation-core:latest.release")
     implementate("skywolf46:commandannotation-core:latest.release")
-    testImplementation("junit:junit:4.13")
-    testImplementation("skywolf46:exutil-common:1.72.0")
+
+    testImplementation ("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     testImplementation group: 'org.jetbrains.kotlin', name: 'kotlin-reflect'
-    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.7.1")
-    testImplementation("org.junit.jupiter:junit-jupiter-params:5.7.1")
-    testImplementation("org.junit.platform:junit-platform-runner:1.7.1")
+    testImplementation("org.spigotmc:spigot:1.12.2")
+    testImplementation("skywolf46:exutil-common:latest.release")
+    testImplementation("skywolf46:exutil-minecraft:latest.release")
+    testImplementation("skywolf46:commandannotation-core:latest.release")
+    implementate("skywolf46:commandannotation-core:4.0.0-alpha6")
+    testImplementation('junit:junit:4.13.2')
+    testImplementation('org.junit.jupiter:junit-jupiter-engine:5.8.2')
+    testImplementation('org.junit.jupiter:junit-jupiter-params:5.8.2')
+    testImplementation('org.junit.platform:junit-platform-runner:1.8.2')
 }
 
 jar {
