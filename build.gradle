@@ -72,7 +72,7 @@ publishing {
     publications {
         create("jar", MavenPublication) {
             groupId 'skywolf46'
-            artifactId "commandannotation-minecraft"
+            artifactId "commandannotation-bukkit"
             version rootProject.properties['version'] as String
             from components.java
         }
