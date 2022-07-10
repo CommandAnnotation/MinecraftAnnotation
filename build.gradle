@@ -27,16 +27,16 @@ dependencies {
     compileOnly "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
     compileOnly group: 'org.jetbrains.kotlin', name: 'kotlin-reflect'
     compileOnly("org.spigotmc:spigot:1.12.2")
-    compileOnly("skywolf46:exutil-common:latest.release")
-    compileOnly("skywolf46:exutil-minecraft:latest.release")
-    compileOnly("skywolf46:commandannotation-core:latest.release")
-    implementate("skywolf46:commandannotation-core:latest.release")
+    compileOnly("skywolf46:extrautility-core:2.4.0")
+    compileOnly("skywolf46:extrautility-bukkit:2.1.1")
+
+    compileOnly("skywolf46:commandannotation-core:4.1.0")
+    implementate("skywolf46:commandannotation-core:4.1.0")
 
     testImplementation ("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     testImplementation group: 'org.jetbrains.kotlin', name: 'kotlin-reflect'
     testImplementation("org.spigotmc:spigot:1.12.2")
-    testImplementation("skywolf46:exutil-common:latest.release")
-    testImplementation("skywolf46:exutil-minecraft:latest.release")
+    testImplementation("skywolf46:extrautility-core:2.4.0")
     testImplementation("skywolf46:commandannotation-core:latest.release")
     implementate("skywolf46:commandannotation-core:4.0.0-alpha6")
     testImplementation('junit:junit:4.13.2')
