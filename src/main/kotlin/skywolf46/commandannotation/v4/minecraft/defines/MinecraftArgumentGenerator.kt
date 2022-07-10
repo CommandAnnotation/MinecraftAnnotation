@@ -7,7 +7,8 @@ import skywolf46.commandannotation.v4.api.data.Arguments
 import skywolf46.commandannotation.v4.minecraft.annotations.MinecraftCommand
 import skywolf46.commandannotation.v4.minecraft.data.MinecraftCommandInfo
 import skywolf46.commandannotation.v4.minecraft.impl.MinecraftCommandInstance
-import skywolf46.extrautility.data.ArgumentStorage
+import skywolf46.extrautility.core.data.ArgumentStorage
+import skywolf46.extrautility.core.util.ReflectionUtil
 
 object MinecraftArgumentGenerator {
     @ArgumentGenerator(bindAt = [MinecraftCommand::class])
@@ -17,8 +18,8 @@ object MinecraftArgumentGenerator {
     }
 
     @CommandGenerator(commandAnnotation = MinecraftCommand::class)
-    fun generateCommand(args: Arguments): MinecraftCommandInstance {
-        return MinecraftCommandInstance()
+    fun generateCommand(args: Arguments, worker: ReflectionUtil.CallableFunction): MinecraftCommandInstance {
+        return MinecraftCommandInstance(worker)
     }
 
     @AnnotationConverter

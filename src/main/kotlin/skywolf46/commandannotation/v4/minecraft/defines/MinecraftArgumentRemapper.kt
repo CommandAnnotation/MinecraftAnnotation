@@ -3,8 +3,8 @@ package skywolf46.commandannotation.v4.minecraft.defines
 import org.bukkit.OfflinePlayer
 import org.bukkit.entity.Player
 import skywolf46.commandannotation.v4.api.annotations.ArgumentRemapper
-import skywolf46.extrautility.util.cachePlayerOf
-import skywolf46.extrautility.util.playerOf
+import skywolf46.extrautil.bukkit.util.offlinePlayerOf
+import skywolf46.extrautil.bukkit.util.playerOf
 
 object MinecraftArgumentRemapper {
     @ArgumentRemapper("player")
@@ -17,7 +17,7 @@ object MinecraftArgumentRemapper {
         val player = playerOf(name)
         if (player != null)
             return player
-        val offPlayer = cachePlayerOf(name)
+        val offPlayer = offlinePlayerOf(name)
         if (offPlayer.hasPlayedBefore() || offPlayer.isOnline)
             return offPlayer
         return null
