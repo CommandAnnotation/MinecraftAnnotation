@@ -18,7 +18,7 @@ object MinecraftArgumentGenerator {
     }
 
     @CommandGenerator(commandAnnotation = MinecraftCommand::class)
-    fun generateCommand(args: Arguments, worker: ReflectionUtil.CallableFunction): MinecraftCommandInstance {
+    fun generateCommand(worker: ReflectionUtil.CallableFunction): MinecraftCommandInstance {
         return MinecraftCommandInstance(worker)
     }
 
